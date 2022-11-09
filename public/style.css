@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.questionario {
+    width: 80%;
+    height: 500px;
+    background: aqua;
+    margin-left: 10%;
+}
