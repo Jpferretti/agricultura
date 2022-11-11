@@ -25,7 +25,7 @@ class ProdutoController extends Controller
      */
     public function create()
     {
-        //
+        return view('despesa/create',[]);
     }
 
     /**
@@ -36,7 +36,11 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $oProduto = new Produto();
+        $oProduto->name = $request->input('name');
+        $oProduto->valor = $request->input('valor');
+
+        return redirect('/');
     }
 
     /**

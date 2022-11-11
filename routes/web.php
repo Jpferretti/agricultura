@@ -14,9 +14,9 @@ use App\Http\Controllers\ProdutoController;
 |
 */
 
-Route::get('/', function () {
-    return redirect('despesa/calculodespesa');
-});
+//Route::get('/', function () {
+//    return redirect('despesa/calculodespesa');
+//});
 
-Route::resource('despesa/calculodespesa', ProdutoController::class);
+Route::resource('/', ProdutoController::class);
 
