@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProdutoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\ProdutoController;
-Route::resource('/calculodespesa', ProdutoController::class);
+Route::get('/', function () {
+    return redirect('despesa/calculodespesa');
+});
+
+Route::resource('despesa/calculodespesa', ProdutoController::class);
 

@@ -15,7 +15,7 @@ class ProdutoController extends Controller
     public function index()
     {
         $oProduto = Produto::all();
-        return view('resultadodespesa',['oProduto' => $oProduto]);
+        return view('despesa/calculodespesa',['oProduto' => $oProduto]);
     }
 
     /**
